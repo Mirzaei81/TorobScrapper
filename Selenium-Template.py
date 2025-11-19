@@ -30,16 +30,18 @@ options = [
     #"--ignore-certificate-errors",
     #"--disable-extensions",
     # These flags BELOW are recommended for stability when running Chrome in headless or containerized environments (such as GitHub Actions).
+    "--ignore-certificate-errors",
     "--disable-gpu",
     "--no-sandbox",
     "--disable-dev-shm-usage",
-    '--remote-debugging-port=9222'
+    '--remote-debugging-port=9222',
+    "--allow-insecure-localhost"
 ]
 for option in options:
     chrome_options.add_argument(option)
 driver = uc.Chrome(headless=True)
 data =res.json()
-f = open("result.txt")
+f = open("result.txt","w")
 for prod in data["response"]:
     key = prod["meta_value"]
 
