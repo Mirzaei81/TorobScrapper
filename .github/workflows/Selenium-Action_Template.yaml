@@ -12,7 +12,7 @@ jobs:
       - name: Setting up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.9'
+          python-version: '3.11.6'
       - name: Installing package list
         run: apt list --installed    
       - name: Removing previous chrome instances on runner 

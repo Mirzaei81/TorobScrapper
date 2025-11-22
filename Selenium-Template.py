@@ -67,16 +67,17 @@ for prod in data["response"]:
     avg = accPrice/count
     # all non capital
     if tehrans==0:
-        expected=avg*1.2
-
+        expected=avg*1.11
     # all capital
     elif  noCapitals ==0:
-        expected=avg*1.1
+        expected=avg*1.05
     else:
         if count>5:
-            expected=avg*1.10
+            expected=avg*1.07
         else:
-            expected=avg*1.15
+            expected=avg*1.09
+    #roundings
+    expectedRound = ceil(expected/rounding)*rounding
     #roundings
     expectedRound = ceil(expected/rounding)*rounding
     body = {
