@@ -78,8 +78,6 @@ for prod in data["response"]:
             expected=avg*1.09
     #roundings
     expectedRound = ceil(expected/rounding)*rounding
-    #roundings
-    expectedRound = ceil(expected/rounding)*rounding
     body = {
             "id":prod["post_id"],
             "price":expectedRound,
