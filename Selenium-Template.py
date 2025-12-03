@@ -1,39 +1,88 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-import chromedriver_autoinstaller
-from pyvirtualdisplay import Display
-display = Display(visible=0, size=(800, 800))  
-display.start()
+import undetected_chromedriver as uc
+from json import loads
+from math import ceil
+import os
+import pandas
 
+from selenium import webdriver
+import requests
+import json
+
+import numpy as np
+import math
+def get_sku_name(id):
+    url = f"https://zardaan.com/wp-json/wc/v3/products/{id}"
+    payload = json.dumps({
+    "searchParameters": {
+        "input": "00138432",
+        "type": "QUERY"
+    },
+    "components": [
+        {
+        "component": "PRIMARY_AREA"
+        }
+    ]
+    })
+    headers = {
+    'Content-Type': 'application/json',
+    'Authorization': 'Basic Y2tfYTdjNGVlM2U5NTc1MDI4MWQ5MTg1MmRlOTJkMjc1NWNkMDUyZGUyMjpjc18yNWU4NDQ4YzZkMWE1YzdkYTlhMGFlMDE0Y2M4ZWQ2YzViMGU2MWE5',
+    'Cookie': 'pxcelPage_c01002=1'
+    }
+
+    response = requests.request("GET", url, headers=headers, data=payload)
+
+    return response.json()
+
+import chromedriver_autoinstaller
+# from pyvirtualdisplay import Display
+# display = Display(visible=0, size=(800, 800))  
+# display.start()
 chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
                                       # and if it doesn't exist, download it automatically,
                                       # then add chromedriver to path
 
+WOOCOMERCE_KEY=os.getenv("WOOCOMERCE_KEY")
+WOOCOMERCE_SECRET=os.getenv("WOOCOMERCE_SECRET")
+res = requests.get("https://zardaan.com/wp-json/torob/v1/listProds")
+
 chrome_options = webdriver.ChromeOptions()
-# Add your options as needed
+# # Add your options as needed
 options = [
-   # Define window size here
+# Define window size here
     "--window-size=1200,1200",
     "--ignore-certificate-errors"
- 
-    #"--headless",
-    #"--window-size=1920,1200",
-    #"--ignore-certificate-errors",
-    #"--disable-extensions",
-    # These flags BELOW are recommended for stability when running Chrome in headless or containerized environments (such as GitHub Actions).
+    "--ignore-certificate-errors",
     "--disable-gpu",
     "--no-sandbox",
-    "--disable-dev-shm-usage",
-    '--remote-debugging-port=9222'
+    "--allow-insecure-localhost"
 ]
 for option in options:
     chrome_options.add_argument(option)
+driver = uc.Chrome(headless=True)
+data =res.json()
+productData  = {"prices":[],"names":[],"sku":[],"ids":[],"urls":[],"locs":[],"shops":[]}
 
-    
-driver = webdriver.Chrome(options = chrome_options)
+for prod in data["response"]:
+    key = prod["meta_value"]
+    driver.get(f"https://api.torob.com/v4/base-product/sellers/?prk={key}")
+    zardanProd = get_sku_name(prod["post_id"])
+    if zardanProd["brands"] and zardanProd["brands"][0]["id"]==7328:
+        elm = driver.find_element(uc.By.XPATH,value="/html/body/pre")
 
-driver.get('http://github.com')
-print(driver.title)
-with open('./GitHub_Action_Results.txt', 'w') as f:
-    f.write(f"This was written with a GitHub action {driver.title}")
+        data = loads(elm.text)
+        for i,res in enumerate(data["results"]):
+            if  not res["availability"]:
+                break
+            if res["price"]!=0:
+                productData["ids"].append(zardanProd["id"])
+                productData["names"].append(zardanProd["slug"])
+                productData["sku"].append(zardanProd["sku"])
+                productData["prices"].append(res["price"])
+                productData["shops"].append(res["shop_name"])
+                productData["urls"].append(zardanProd["permalink"])
+                if res["shop_name2"]=="تهران":
+                    productData["locs"].append("T")
+                else:
+                    productData["locs"].append("nT")
+df = pandas.DataFrame(productData)
+df.to_csv("product_data.csv",encoding="utf-8-sig")
