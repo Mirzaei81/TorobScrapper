@@ -1,6 +1,5 @@
 import undetected_chromedriver as uc
 from json import loads
-from math import ceil
 import os
 import pandas
 
@@ -8,8 +7,6 @@ from selenium import webdriver
 import requests
 import json
 
-import numpy as np
-import math
 def get_sku_name(id):
     url = f"https://zardaan.com/wp-json/wc/v3/products/{id}"
     payload = json.dumps({
