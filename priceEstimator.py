@@ -243,4 +243,3 @@ for i,r in result.iterrows():
 			"stock": 0 if r.sellerCount<5 else 10,
     } 
 	pageResponse = requests.post(f"https://zardaan.com/wp-json/torob/v1/UPDATE/",data=body)
-	print(i,rounded,pageResponse.json())
