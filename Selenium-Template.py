@@ -36,16 +36,13 @@ def get_sku_name(id):
 # from pyvirtualdisplay import Display
 # display = Display(visible=0, size=(800, 800))  
 # display.start()
-# chromedriver_autoinstaller.install()  # Check if the current version of chromedriver exists
-                                      # and if it doesn't exist, download it automatically,
-                                      # then add chromedriver to path
+from webdriver_manager.chrome import ChromeDriverManager
+
+
 
 WOOCOMERCE_KEY=os.getenv("WOOCOMERCE_KEY")
 WOOCOMERCE_SECRET=os.getenv("WOOCOMERCE_SECRET")
 session = requests.Session()
-
-
-
 res = session.get("https://zardaan.com/wp-json/torob/v1/listProds")
 
 chrome_options = webdriver.ChromeOptions()
@@ -62,7 +59,8 @@ options = [
 ]
 for option in options:
     chrome_options.add_argument(option)
-driver = uc.Chrome(headless=True)
+
+driver = uc.Chrome(headless=True,driver_executable_path=ChromeDriverManager().install())
 data =res.json()
 productData  = {"prices":[],"names":[],"sku":[],"ids":[],"urls":[],"locs":[],"shops":[]}
 

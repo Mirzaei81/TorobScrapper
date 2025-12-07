@@ -27,7 +27,6 @@ jobs:
         run: |
           wget -q -O /tmp/chrome.deb https://dl.google.com/linux/deb/pool/main/g/google-chrome-stable/google-chrome-stable_143.0.7499.40-1_amd64.deb && \
           sudo apt install -y /tmp/chrome.deb
-           sudo apt-get install chromium-chromedriver
           sudo apt-get install -y xvfb
 
 

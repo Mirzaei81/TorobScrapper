@@ -1,8 +1,10 @@
 import pandas as pd
 import numpy as np
 import math
-
 df = pd.read_csv("product_data.csv",encoding="utf-8")
+df.head(3)
+
+
 def weighted_winsor(values, weights, alpha):
     n = len(values)
     k = int(math.floor(alpha * n))
@@ -135,6 +137,7 @@ def optimize_prices(values, locations,
     return current_mean if  len(v[locs == 'T'])!=0 else current_mean*1.2
 
 
+
 import numpy as np
 
 def calculate_fair_values(data):
@@ -162,6 +165,8 @@ def calculate_fair_values(data):
     return float(combined_mean.item())
 
 
+
+
 from scipy.stats import norm
 def gaussian_fit(data):
     mu = np.mean(data)
@@ -169,6 +174,8 @@ def gaussian_fit(data):
     q4 = norm.ppf(q=0.4,loc=mu,scale=sigma)
     q5 = norm.ppf(q=0.5,loc=mu,scale=sigma)
     return ((q5-q4)//2).item()
+
+
 
 def minimum_fair_price(prices):
     # حذف مقادیر صفر یا ناموجود
@@ -214,6 +221,7 @@ def minimum_fair_price(prices):
     return rounded_value
 
 
+
 def applyOptimization(g):
     Q4 = g["prices"].quantile(1)
     Q1 = g["prices"].quantile(.25)
@@ -226,20 +234,32 @@ def applyOptimization(g):
                 "gaussian2": minimum_fair_price(filtered["prices"]),
                 "sellerCount":len(filtered),
                 "max":max(filtered["prices"]),
+                "sku":max(filtered["sku"])
             })
 
 
-result =  df[["ids","prices","locs"]].groupby("ids").apply(
+result =  df[["ids","sku","prices","locs"]].groupby("ids").apply(
 	    applyOptimization
 )
+result
+
 rounding = 1e5
 import requests
+
 result = result.dropna()
-for i,r in result.iterrows():
-	rounded = round(max(r.winzor,r.gaussian1,r.gaussian2)/rounding*1.3)*rounding
-	body = {
-            "id":i,
-            "price":max(rounded,r["max"]),
-			"stock": 0 if r.sellerCount<5 else 10,
-    } 
-	pageResponse = requests.post(f"https://zardaan.com/wp-json/torob/v1/UPDATE/",data=body)
+f = open("output.json","w")
+ss ='{"result":['
+def updateWeb():
+	global ss
+	for i,r in result.iterrows():
+		rounded = round(max(r.winzor,r.gaussian1,r.gaussian2)/rounding*1.17)*rounding
+		body = {
+				"id":i,
+				"price":rounded,
+				"stock": 0 if r.sellerCount<5 else 10,
+		} 
+		pageResponse = requests.post(f"https://zardaan.com/wp-json/torob/v1/UPDATE/",data=body)
+		ss+=pageResponse.text+","
+updateWeb()
+ss = ss[:-1]+"]}"
+f.write(ss)
