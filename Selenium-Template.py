@@ -60,9 +60,13 @@ options = [
 for option in options:
     chrome_options.add_argument(option)
 
-driver = uc.Chrome(headless=True,driver_executable_path=ChromeDriverManager().install())
+if os.name!="nt":
+    driver = uc.Chrome(headless=True,driver_executable_path=ChromeDriverManager().install())
+else:
+    driver = uc.Chrome(headless=True)
+
 data =res.json()
-productData  = {"prices":[],"names":[],"sku":[],"ids":[],"urls":[],"locs":[],"shops":[]}
+productData  = {"prices":[],"names":[],"sku":[],"ids":[],"urls":[],"locs":[],"shops":[],"brands":[]}
 
 for prod in data["response"]:
     key = prod["meta_value"]
@@ -81,6 +85,10 @@ for prod in data["response"]:
             productData["prices"].append(res["price"])
             productData["shops"].append(res["shop_name"])
             productData["urls"].append(zardanProd["permalink"])
+            if (zardanProd["brands"]):
+                productData["brands"].append(zardanProd["brands"][0]["id"])
+            else:
+                productData["brands"].append(-1)
             if res["shop_name2"]=="تهران":
                 productData["locs"].append("T")
             else:

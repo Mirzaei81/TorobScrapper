@@ -1,0 +1,696 @@
+{
+    "result": [
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 23300000, p2.meta_value=23300000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=15053 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20400000, p2.meta_value=20400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=20947 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20400000, p2.meta_value=20400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=20949 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20400000, p2.meta_value=20400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=20955 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20400000, p2.meta_value=20400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=20957 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20500000, p2.meta_value=20500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=20959 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20500000, p2.meta_value=20500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=20961 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20400000, p2.meta_value=20400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=20963 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20500000, p2.meta_value=20500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=20965 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 23800000, p2.meta_value=23800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21100 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20000000, p2.meta_value=20000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21151 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 24200000, p2.meta_value=24200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21240 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 64400000, p2.meta_value=64400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21418 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 29200000, p2.meta_value=29200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21759 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 29300000, p2.meta_value=29300000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21766 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 30600000, p2.meta_value=30600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21767 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 30600000, p2.meta_value=30600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21768 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 29300000, p2.meta_value=29300000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21769 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 29200000, p2.meta_value=29200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21770 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 29300000, p2.meta_value=29300000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=21771 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5600000, p2.meta_value=5600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=69278 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5600000, p2.meta_value=5600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=69285 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5600000, p2.meta_value=5600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=69290 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5600000, p2.meta_value=5600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=69291 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5600000, p2.meta_value=5600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=69633 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5600000, p2.meta_value=5600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70199 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 23800000, p2.meta_value=23800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70357 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 23800000, p2.meta_value=23800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70362 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 23800000, p2.meta_value=23800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70377 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 23800000, p2.meta_value=23800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70378 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20000000, p2.meta_value=20000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70396 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20000000, p2.meta_value=20000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70419 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20000000, p2.meta_value=20000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70420 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20000000, p2.meta_value=20000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70421 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20000000, p2.meta_value=20000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70422 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20000000, p2.meta_value=20000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70423 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 20000000, p2.meta_value=20000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70424 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 24200000, p2.meta_value=24200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70458 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 24200000, p2.meta_value=24200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70459 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 24200000, p2.meta_value=24200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70460 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 24200000, p2.meta_value=24200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70461 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 24200000, p2.meta_value=24200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70462 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 24200000, p2.meta_value=24200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70491 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 24200000, p2.meta_value=24200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70492 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 53800000, p2.meta_value=53800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70544 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 53600000, p2.meta_value=53600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70545 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 53600000, p2.meta_value=53600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70566 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 53600000, p2.meta_value=53600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70567 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 53600000, p2.meta_value=53600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70568 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 53600000, p2.meta_value=53600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70569 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 53600000, p2.meta_value=53600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70570 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 53600000, p2.meta_value=53600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70571 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 97200000, p2.meta_value=97200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70596 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 97200000, p2.meta_value=97200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70615 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 97200000, p2.meta_value=97200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70616 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 97200000, p2.meta_value=97200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70617 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 97200000, p2.meta_value=97200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70618 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 97200000, p2.meta_value=97200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70619 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 97200000, p2.meta_value=97200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70620 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 64400000, p2.meta_value=64400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70623 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 64400000, p2.meta_value=64400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70640 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 64400000, p2.meta_value=64400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70641 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 64400000, p2.meta_value=64400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70642 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 65700000, p2.meta_value=65700000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70643 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 64400000, p2.meta_value=64400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70644 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 28000000, p2.meta_value=28000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70674 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 28000000, p2.meta_value=28000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70690 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 28000000, p2.meta_value=28000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70691 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 28000000, p2.meta_value=28000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70692 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 28000000, p2.meta_value=28000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70693 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 28000000, p2.meta_value=28000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70694 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 19800000, p2.meta_value=19800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70701 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 19800000, p2.meta_value=19800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70712 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 19800000, p2.meta_value=19800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70713 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 19800000, p2.meta_value=19800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70714 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 500000, p2.meta_value=500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70820 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 4600000, p2.meta_value=4600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70893 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 4600000, p2.meta_value=4600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70895 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 6400000, p2.meta_value=6400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70914 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 6400000, p2.meta_value=6400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70929 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 6400000, p2.meta_value=6400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70930 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 500000 , p2.meta_value=500000,p3.meta_value=0,p4.meta_value='no',p5.meta_value='outofstock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70934 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2700000, p2.meta_value=2700000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70989 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2700000, p2.meta_value=2700000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=70990 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2500000, p2.meta_value=2500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71003 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2500000, p2.meta_value=2500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71004 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2500000, p2.meta_value=2500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71005 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2500000, p2.meta_value=2500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71006 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 13000000, p2.meta_value=13000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71010 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 9500000, p2.meta_value=9500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71017 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 11800000, p2.meta_value=11800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71026 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 4000000, p2.meta_value=4000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71039 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2400000, p2.meta_value=2400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71088 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 29600000, p2.meta_value=29600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71107 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 52900000, p2.meta_value=52900000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71120 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 35800000, p2.meta_value=35800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71162 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2700000, p2.meta_value=2700000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71375 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2500000, p2.meta_value=2500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=71386 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2900000, p2.meta_value=2900000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=72838 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 28000000, p2.meta_value=28000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=73644 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 3200000, p2.meta_value=3200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=74113 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 21500000, p2.meta_value=21500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87209 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 15600000, p2.meta_value=15600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87213 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 9200000, p2.meta_value=9200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87217 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 10300000, p2.meta_value=10300000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87220 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 7900000, p2.meta_value=7900000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87225 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 7000000, p2.meta_value=7000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87238 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5100000, p2.meta_value=5100000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87245 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 9400000, p2.meta_value=9400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87252 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 6400000, p2.meta_value=6400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87257 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 6200000, p2.meta_value=6200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87264 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 15200000, p2.meta_value=15200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87269 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2800000, p2.meta_value=2800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87275 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 7300000, p2.meta_value=7300000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87282 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 3100000, p2.meta_value=3100000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=87291 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 37400000, p2.meta_value=37400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88680 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 18400000, p2.meta_value=18400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88696 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 59600000, p2.meta_value=59600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88705 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 103200000, p2.meta_value=103200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88716 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 51800000, p2.meta_value=51800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88725 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 3000000, p2.meta_value=3000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88812 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 6700000, p2.meta_value=6700000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88868 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5200000, p2.meta_value=5200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88879 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5100000, p2.meta_value=5100000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88886 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 64800000, p2.meta_value=64800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88900 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 34900000, p2.meta_value=34900000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88908 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 56100000, p2.meta_value=56100000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88914 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 18800000 , p2.meta_value=18800000,p3.meta_value=0,p4.meta_value='no',p5.meta_value='outofstock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88921 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 32200000, p2.meta_value=32200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88926 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 67800000 , p2.meta_value=67800000,p3.meta_value=0,p4.meta_value='no',p5.meta_value='outofstock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88933 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 88400000, p2.meta_value=88400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88946 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 75000000, p2.meta_value=75000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88952 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 4100000, p2.meta_value=4100000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88969 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 4800000, p2.meta_value=4800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88979 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 7600000 , p2.meta_value=7600000,p3.meta_value=0,p4.meta_value='no',p5.meta_value='outofstock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88985 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5300000, p2.meta_value=5300000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=88992 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 11900000, p2.meta_value=11900000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89012 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 11900000, p2.meta_value=11900000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89013 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 3700000, p2.meta_value=3700000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89017 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 11500000, p2.meta_value=11500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89023 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 3700000, p2.meta_value=3700000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89031 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 1200000, p2.meta_value=1200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89037 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 7600000, p2.meta_value=7600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89042 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 5000000, p2.meta_value=5000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89048 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 3100000, p2.meta_value=3100000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89054 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 4800000, p2.meta_value=4800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89059 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 3000000, p2.meta_value=3000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89065 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 13800000, p2.meta_value=13800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89084 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 4600000, p2.meta_value=4600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89093 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 4900000, p2.meta_value=4900000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89101 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 37000000, p2.meta_value=37000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89105 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 6100000, p2.meta_value=6100000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89233 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 2800000, p2.meta_value=2800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89240 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 18000000, p2.meta_value=18000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89246 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 36000000, p2.meta_value=36000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89253 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 26600000, p2.meta_value=26600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89259 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 18300000, p2.meta_value=18300000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89264 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 22600000, p2.meta_value=22600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89273 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 33100000, p2.meta_value=33100000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89284 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 15200000, p2.meta_value=15200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89291 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 10400000, p2.meta_value=10400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89296 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 10400000, p2.meta_value=10400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89306 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 14300000, p2.meta_value=14300000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89310 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 26200000, p2.meta_value=26200000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89317 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 11500000, p2.meta_value=11500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89339 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 8000000, p2.meta_value=8000000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89346 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 13600000, p2.meta_value=13600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89351 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 10400000, p2.meta_value=10400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89360 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 19500000, p2.meta_value=19500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89365 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 15500000, p2.meta_value=15500000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89372 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 30600000, p2.meta_value=30600000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89378 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 12400000, p2.meta_value=12400000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89388 ;"
+        },
+        {
+            "message": "Failure",
+            "error": "stmt was UPDATE wp_postmeta p1 join wp_postmeta p2 on p2.post_id = p1.post_id join wp_postmeta p3 on p3.post_id = p1.post_id join wp_postmeta p4 on p4.post_id = p3.post_id join wp_postmeta p5 on p5.post_id =p4.post_id  set p1.meta_value = 21800000, p2.meta_value=21800000, ,p3.meta_value=10,p4.meta_value='yes',p5.meta_value='instock'  WHERE p1.meta_key='_price' and p2.meta_value='_regular_price' and p3.meta_key='_stock' and p4.meta_key='_backorders' and p5.meta_key='_stock_status' and p1.post_id=89396 ;"
+        }
+    ]
+}
