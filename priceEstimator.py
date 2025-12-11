@@ -3,7 +3,12 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 from scipy.stats import norm
+import os 
+import dotenv
+dotenv.load_dotenv()
 
+WOOCOMERCE_KEY=os.getenv("WOOCOMERCE_KEY")
+WOOCOMERCE_SECRET=os.getenv("WOOCOMERCE_SECRET")
 df = pd.read_csv("product_data.csv",encoding="utf-8")
 def weighted_winsor(values, weights, alpha):
     n = len(values)
@@ -317,35 +322,18 @@ def remove_outliers(price_list):
     lower, upper = q1 - 1.5 * iqr, q3 + 1.5 * iqr
     return [p for p in price_list if lower <= p <= upper]
 
-def parse_price_lines(price_lines):
-    """پارس فرمت: برند, شهر, قیمت"""
-    prices = []
-    for line in price_lines.strip().splitlines():
-        if ',' in line:
-            parts = [p.strip() for p in line.split(',')]
-            if len(parts) == 3:
-                brand, city, price_str = parts
-                price_str = persian_to_english_digits(price_str).replace('.', '').replace(',', '')
-                try:
-                    price = int(price_str)
-                    if price > 0:
-                        prices.append({'brand': brand, 'city': city, 'price': price})
-                except ValueError:
-                    continue
-    return prices
-
 def calculate_competitive_price(prods):
-    prods["estimated"] = np.where(prods["brand"]==7328,prods["prices"]*1.20,prods["prices"]*1.1)
+    prods["estimated"] = np.where(prods["brands"]==7328,prods["prices"]*1.20,prods["prices"]*1.1)
     
     # ⿢ جداسازی تهران/شهرستان
-    tehran_vals = [p['estimated'] for p in prods if p['locs'] == 'T']
-    shahrestan_vals = [p['estimated'] for p in prods if p['locs'] == 'nT']
+    tehran_vals = prods.where(prods['locs']=="T")["estimated"]
+    shahrestan_vals = prods.where(prods['locs']!="T")["estimated"]
     
-    mu_T = np.mean(tehran_vals) if tehran_vals else None
-    mu_S = np.mean(shahrestan_vals) if shahrestan_vals else None
+    mu_T = np.mean(tehran_vals) if len(tehran_vals)!=0 else None
+    mu_S = np.mean(shahrestan_vals) if len(shahrestan_vals)!=0 else None
     
     all_prices = tehran_vals + shahrestan_vals
-    CI = (max(all_prices) - min(all_prices)) / np.mean(all_prices) if all_prices else 1.0
+    CI = (max(all_prices) - min(all_prices)) / np.mean(all_prices) if len(all_prices)!=0 else 1.0
     
     alpha_T = 0.03 if CI <= 0.03 else 0.05
     alpha_S = 0.05 if CI <= 0.03 else 0.08
@@ -378,11 +366,12 @@ def applyOptimization(g):
                 "sellerCount":len(filtered),
                 "max":max(filtered["prices"]),
                 "sku":max(filtered["sku"]),
+                "parent_id":max(filtered["parent_id"])
             })
 
 
-result =  df[["ids","sku","prices","locs"]].groupby("ids").apply(
-	    applyOptimization
+result =  df.groupby("ids").apply(
+		applyOptimization
 )
 
 rounding = 1e5
@@ -392,18 +381,25 @@ result = result.dropna()
 f = open("output.json","w")
 ss ='{"result":['
 def updateWeb():
-	global ss
-	for i,r in result.iterrows():
-		rounded = round(min(r.winzor,r.gaussian1,r.gaussian2)/rounding*1.17)*rounding
-		body = {
-				"id":i,
-				"price":rounded,
-				"stock": 0 if r.sellerCount<5 else 10,
-		} 
-		pageResponse = requests.post(f"https://zardaan.com/wp-json/torob/v1/UPDATE/",data=body)
-		ss+=pageResponse.text+","
+    global ss
+    for i,r in result.iterrows():
+        rounded = round(min(r.winzor,r.gaussian1,r.gaussian2)/rounding*1.17)*rounding
+        body = {
+            "regular_price":rounded,    
+            "sale_price":rounded,
+            "stock": 0 if r.sellerCount<5 else 10,  
+            "backorders": "yes" if r.sellerCount<5 else "no", 
+            "backorders_allowed": True if r.sellerCount<5 else False,    
+            "stock_status": "onbackorder" if r.sellerCount<5 else "instock"
+        } 
+        headers = {
+        'Authorization': 'Basic Y2tfYTdjNGVlM2U5NTc1MDI4MWQ5MTg1MmRlOTJkMjc1NWNkMDUyZGUyMjpjc18yNWU4NDQ4YzZkMWE1YzdkYTlhMGFlMDE0Y2M4ZWQ2YzViMGU2MWE5',
+        }
+        if r["parent_id"]!=0:
+            pageResponse = requests.put(f"https://zardaan.com/wp-json/wc/v3/products/{r['parent_id']}/variations/{i}",data=body,headers=headers)
+        else:
+            pageResponse = requests.put(f"https://zardaan.com/wp-json/wc/v3/products/{i}",data=body,headers=headers)
+        ss+=pageResponse.text+","
 updateWeb()
 ss = ss[:-1]+"]}"
 f.write(ss)
-
-

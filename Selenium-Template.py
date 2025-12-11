@@ -66,7 +66,7 @@ else:
     driver = uc.Chrome(headless=True)
 
 data =res.json()
-productData  = {"prices":[],"names":[],"sku":[],"ids":[],"urls":[],"locs":[],"shops":[],"brands":[]}
+productData  = {"prices":[],"names":[],"sku":[],"ids":[],"urls":[],"locs":[],"shops":[],"brands":[],"parent_id":[]}
 
 for prod in data["response"]:
     key = prod["meta_value"]
@@ -85,6 +85,7 @@ for prod in data["response"]:
             productData["prices"].append(res["price"])
             productData["shops"].append(res["shop_name"])
             productData["urls"].append(zardanProd["permalink"])
+            productData["parent_id"].append(prod["post_parent"])
             if (zardanProd["brands"]):
                 productData["brands"].append(zardanProd["brands"][0]["id"])
             else:
