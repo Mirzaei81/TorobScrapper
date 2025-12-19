@@ -86,13 +86,10 @@ for prod in data["response"]:
             productData["shops"].append(res["shop_name"])
             productData["urls"].append(zardanProd["permalink"])
             productData["parent_id"].append(prod["post_parent"])
+            productData["locs"].append(res["shop_name2"])
             if (zardanProd["brands"]):
                 productData["brands"].append(zardanProd["brands"][0]["id"])
             else:
                 productData["brands"].append(-1)
-            if res["shop_name2"]=="تهران":
-                productData["locs"].append("T")
-            else:
-                productData["locs"].append("nT")
 df = pandas.DataFrame(productData)
 df.to_csv("product_data.csv",encoding="utf-8-sig")

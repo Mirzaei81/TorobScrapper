@@ -7,9 +7,26 @@ import os
 import dotenv
 dotenv.load_dotenv()
 
-WOOCOMERCE_KEY=os.getenv("WOOCOMERCE_KEY")
-WOOCOMERCE_SECRET=os.getenv("WOOCOMERCE_SECRET")
 df = pd.read_csv("product_data.csv",encoding="utf-8")
+CONFIG = {
+    'Z_THRESHOLD': 3.5,           
+    'NORMAL_THRESHOLD': 0.85,     
+    'TEHRAN_NORMAL': 1.05,        
+    'SHAHRESTAN_NORMAL': 1.08,    
+    'TEHRAN_HIGH': 1.80,          
+    'SHAHRESTAN_HIGH': 1.10,      
+    'SHAHRESTAN_RATIO': 0.70,     
+    'TEHRAN_RATIO': 0.60,         
+    'ROUND_STEP': 50000,          
+    'SHIPPING_RATE': 0.10,        
+    'SHIPPING_CAP': 600000,       
+    'TOLERANCE_ADD_MIN': 500000,  
+    'TOLERANCE_ADD_MAX': 6000000, 
+    'TOLERANCE_XIAOMI': 0.05,     
+    'TOLERANCE_OTHER': 0.03,      
+}
+
+
 def weighted_winsor(values, weights, alpha):
     n = len(values)
     k = int(math.floor(alpha * n))
@@ -129,8 +146,6 @@ def optimize_prices(values, locations,
         })
 
     return current_mean if  len(v[locs == 'T'])!=0 else current_mean*1.2
-
-
 def calculate_fair_values(data):
     # 1. حذف 10 درصد پایین و بالا داده‌ها
     data_sorted = np.sort(data)
@@ -323,7 +338,7 @@ def remove_outliers(price_list):
     return [p for p in price_list if lower <= p <= upper]
 
 def calculate_competitive_price(prods):
-    prods["estimated"] = np.where(prods["brands"]==7328,prods["prices"]*1.20,prods["prices"]*1.1)
+    prods["estimated"] = np.where(prods["brands"]==7328,prods["prices"]*1.12,prods["prices"]*1.1)
     
     # ⿢ جداسازی تهران/شهرستان
     tehran_vals = prods.where(prods['locs']=="T")["estimated"]
@@ -346,11 +361,100 @@ def calculate_competitive_price(prods):
         price_T = mu_T * (1 + alpha_T) if mu_T else float('inf')
         price_S = (mu_S + 500000) * (1 + alpha_S) if mu_S else float('inf')
         if price_S < price_T:
-            price_final = price_S
+            s,price_final = price_S
         else:
-            price_final =price_T
+            t,price_final =price_T
     
-    return price_final
+    return price_final[1]
+
+# همه توابع کمکی (CONFIG, PROVINCES, detect_province, remove_outliers, get_tolerance_rate, 
+# calculate_tolerance_addition, get_region_coefficients, select_strategy) همان قبلی‌ها
+def get_tolerance_rate(brand_name: np.int64) -> float:
+    """تلورانس تفکیکی"""
+    if  brand_name==7328:
+        return CONFIG['TOLERANCE_XIAOMI']
+    return CONFIG['TOLERANCE_OTHER']
+
+def calculate_tolerance_addition(base_value: float, rate: float) -> float:
+    """تلورانس اضافه محدود 500k-6M"""
+    suggested = base_value * rate
+    return max(min(suggested, CONFIG['TOLERANCE_ADD_MAX']), CONFIG['TOLERANCE_ADD_MIN'])
+
+def get_region_coefficients(shahrestan_ratio: float) -> tuple:
+    """ضرایب بر اساس غلبه"""
+    if shahrestan_ratio > CONFIG['SHAHRESTAN_RATIO']:
+        return CONFIG['TEHRAN_HIGH'], CONFIG['SHAHRESTAN_HIGH']
+    return CONFIG['TEHRAN_NORMAL'], CONFIG['SHAHRESTAN_NORMAL']
+
+def select_strategy(tehran_ratio: float, shahrestan_ratio: float, 
+                   tehran_price: float, shahrestan_price: float) -> tuple:
+    """استراتژی 60%"""
+    if tehran_ratio > CONFIG['TEHRAN_RATIO']:
+        return max(tehran_price, shahrestan_price), "max (تهران>60%)"
+    elif shahrestan_ratio > CONFIG['TEHRAN_RATIO']:
+        return min(tehran_price, shahrestan_price), "min (شهرستان>60%)"
+    return (tehran_price + shahrestan_price) / 2, "میانگین (تعادل)"
+
+
+
+def calculate_competitive_price_tehran_floor(prod:pd.DataFrame):
+    """الگوریتم نهایی - قیمت ≤ میانه + کف تهران حفظ شود"""
+    
+    if len(prod) < 3:
+        return np.inf
+    
+    
+    # 🔥 میانه کل (سقف نهایی)
+    median_cap = prod['prices'].median()
+    
+    # 🔥 کف تهران (حداقل مطلق)
+    tehran_prices = prod[prod['locs'] == 'تهران']['prices']
+    tehran_floor = tehran_prices.min() if len(tehran_prices) > 0 else 0
+    
+    # 5. پاکسازی منطقه‌ای
+    tehran_data = prod[prod['locs'] == 'تهران']
+    other_data = prod[prod['locs'] != 'تهران']
+    
+    tehran_clean = tehran_data
+    shahrestan_clean = other_data
+    
+    # 6. تلورانس (فیلیپس = 3%)
+    brand = prod['brands'].iloc[0]
+    tolerance_rate = get_tolerance_rate(brand)
+    
+    tehran_base = tehran_clean["prices"].min() if len(tehran_clean) > 0 else float('inf')
+    shahrestan_base = shahrestan_clean["prices"].min() if len(shahrestan_clean) > 0 else float('inf')
+    
+    tehran_tolerance = calculate_tolerance_addition(tehran_base, tolerance_rate)
+    shahrestan_tolerance = calculate_tolerance_addition(shahrestan_base, tolerance_rate)
+    
+    tehran_price = tehran_base + tehran_tolerance
+    shahrestan_price = shahrestan_base + shahrestan_tolerance
+    
+    # 🔥 اعمال کف تهران
+    tehran_price = max(tehran_price, tehran_floor)
+    shahrestan_price = max(shahrestan_price, tehran_floor)
+    
+    # 7. ضرایب + استراتژی
+    total_clean = len(tehran_clean) + len(shahrestan_clean)
+    shahrestan_ratio = len(shahrestan_clean) / total_clean if total_clean > 0 else 0
+    tehran_ratio = 1 - shahrestan_ratio
+    
+    coef_tehran, coef_shahrestan = get_region_coefficients(shahrestan_ratio)
+    
+    final_tehran = min(tehran_price * coef_tehran, median_cap)
+    shipping = min(shahrestan_base * CONFIG['SHIPPING_RATE'], CONFIG['SHIPPING_CAP'])
+    final_shahrestan = min(shahrestan_price * coef_shahrestan + shipping, median_cap)
+    
+    final_price, strategy = select_strategy(tehran_ratio, shahrestan_ratio, 
+                                          final_tehran, final_shahrestan)
+    
+    # 🔥 محدودیت نهایی
+    capped_price = max(min(final_price, median_cap), tehran_floor)
+    rounded_price = round(capped_price / CONFIG['ROUND_STEP']) * CONFIG['ROUND_STEP']
+    
+    return int(rounded_price)
+
 
 def applyOptimization(g):
     Q4 = g["prices"].quantile(1)
@@ -363,27 +467,31 @@ def applyOptimization(g):
                 "gaussian1": calculate_fair_values(filtered["prices"]),
                 "gaussian2": minimum_fair_price(filtered["prices"]),
                 "competetive_price":calculate_competitive_price(filtered),
+                "competetive_price_2":calculate_competitive_price_tehran_floor(filtered),
                 "sellerCount":len(filtered),
                 "max":max(filtered["prices"]),
+                "mean":filtered["prices"].mean(),
                 "sku":max(filtered["sku"]),
                 "parent_id":max(filtered["parent_id"])
             })
 
 
-result =  df.groupby("ids").apply(
+
+
+result:pd.DataFrame =  df.groupby("ids").apply(
 		applyOptimization
 )
 
 rounding = 1e5
 import requests
 
-result = result.dropna()
+result = result.replace(np.nan,np.inf)
 f = open("output.json","w")
 ss ='{"result":['
 def updateWeb():
     global ss
     for i,r in result.iterrows():
-        rounded = round(min(r.winzor,r.gaussian1,r.gaussian2)/rounding*1.17)*rounding
+        rounded = round(min(r.competetive_price,r.winzor ,r.gaussian1,r.gaussian2,r.competetive_price_2,r["mean"])/rounding*1.17)*rounding
         body = {
             "regular_price":rounded,    
             "sale_price":rounded,
