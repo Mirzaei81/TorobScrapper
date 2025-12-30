@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from scipy.stats import norm
 import os 
 import dotenv
+from urllib.parse import unquote
 dotenv.load_dotenv()
 
 df = pd.read_csv("product_data.csv",encoding="utf-8")
@@ -404,10 +405,8 @@ def calculate_competitive_price_tehran_floor(prod:pd.DataFrame):
         return np.inf
     
     
-    # 🔥 میانه کل (سقف نهایی)
     median_cap = prod['prices'].median()
     
-    # 🔥 کف تهران (حداقل مطلق)
     tehran_prices = prod[prod['locs'] == 'تهران']['prices']
     tehran_floor = tehran_prices.min() if len(tehran_prices) > 0 else 0
     
@@ -471,6 +470,7 @@ def applyOptimization(g):
                 "sellerCount":len(filtered),
                 "max":max(filtered["prices"]),
                 "mean":filtered["prices"].mean(),
+                "name":unquote(filtered["names"].iloc[0]),
                 "sku":max(filtered["sku"]),
                 "parent_id":max(filtered["parent_id"])
             })
@@ -486,6 +486,8 @@ rounding = 1e5
 import requests
 
 result = result.replace(np.nan,np.inf)
+
+result.to_csv('calculated.csv',encoding="utf_8_sig")
 f = open("output.json","w")
 ss ='{"result":['
 def updateWeb():
