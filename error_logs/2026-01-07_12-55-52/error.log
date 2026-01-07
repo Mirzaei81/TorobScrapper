@@ -1,0 +1,85 @@
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mirza\Projects\Python-Selenium-Action\.venv\Lib\site-packages\botasaurus\request_decorator.py", line 111, in run_task
+    result = func(reqs, data)
+             ^^^^^^^^^^^^^^^^
+TypeError: scrape_heading_task() missing 1 required positional argument: 'url'
