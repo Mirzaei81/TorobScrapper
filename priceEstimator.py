@@ -454,11 +454,18 @@ def calculate_competitive_price_tehran_floor(prod:pd.DataFrame):
     
     return int(rounded_price)
 
+def lastestAlgorithm(r):
+    r[""]
+
 
 def applyOptimization(g):
-    Q4 = g["prices"].quantile(1)
-    Q1 = g["prices"].quantile(.25)
-    mask = g["prices"].between(Q1, Q4, inclusive="both")
+    if len(g)<10:
+        lower = g["prices"].quantile(0.1)
+        upper = g["prices"].quantile(1)
+    else:
+        upper = g["prices"].quantile(0.75)
+        lower = g["prices"].quantile(.25)
+    mask = g["prices"].between(lower, upper, inclusive="both")
     filtered = g.loc[mask]
     if len(filtered)>0:
         return pd.Series({
